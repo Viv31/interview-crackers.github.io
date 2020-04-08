@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PHP Interview Questions</title>
+	<title>PHP Interview Questions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -16,19 +16,19 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <style type="text/css">
-  body{
-    background-image: url("img/bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
-  }
-  .container-fluid{
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    background-repeat: repeat;
-    
-    
+	body{
+		background-image: url("img/bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: repeat;
+		height: 100vh;
+	}
+	.container-fluid{
+		background-color: rgba(0,0,0,0.7);
+		position: absolute;
+		background-repeat: repeat;
+		
+		
 }
 a{
   text-decoration: none;
@@ -54,9 +54,9 @@ $(document).ready(function(){
 
 </head>
 <body>
-  <div class="container-fluid">
-  <div class="container" id = "container">
-    <h4 class="mt-5 bg-dark text-white text-center">PHP</h4>
+	<div class="container-fluid">
+	<div class="container" id = "container">
+		<h4 class="mt-5 bg-dark text-white text-center">PHP</h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
         <div class="card mb-5">
@@ -140,23 +140,36 @@ $(document).ready(function(){
           
         </div>
         <div class="card mb-5">
-          <div class="card-header">9)</div>
-            <div class="card-body">Content</div>
+          <div class="card-header">9) What is <b>Header()</b> Function in php ?</div>
+            <div class="card-body">Header function is used to redirect to a location in php <br>
+             ex: <b>header("location:index.php");</b>
+            </div>
           
         </div>
         <div class="card mb-5">
-          <div class="card-header">10)</div>
-            <div class="card-body">Content</div>
+          <div class="card-header">10) How many types of array in php ?</div>
+            <div class="card-body">
+              there are three types of array in php:
+              <ol>
+                <li>Index array</li>
+                <li>Associative array</li>
+                <li>Multidimensional array</li>
+              </ol>
+            </div>
           
         </div>
         <div class="card mb-5">
-          <div class="card-header">11)</div>
-            <div class="card-body">Content</div>
+          <div class="card-header">11) Which method is secure in GET & POST method in php & why?</div>
+            <div class="card-body">
+              POST method is secure in php because it does not our form value in url whereas GET method shows our data in URL.GET method url seems like this
+              <br>
+              <b>index.php?fieldname1=value&fieldname2=value2</b>
+            </div>
           
         </div>
         <div class="card mb-5">
-          <div class="card-header">12)</div>
-            <div class="card-body">Content</div>
+          <div class="card-header">12) How to create session in php ?</div>
+            <div class="card-body">For creating session in php We use <b>session_start()</b></div>
           
         </div>
         <div class="card mb-5">
@@ -216,7 +229,7 @@ $(document).ready(function(){
         </div>
 
     </div>
-  </div>
+	</div>
 </div>
 </body>
 <script>
