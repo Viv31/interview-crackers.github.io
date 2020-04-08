@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interview Crackers</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+	body{
+		background-image: url("img/bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: repeat;
+		height: 100vh;
+	}
+	.container-fluid{
+		background-color: rgba(0,0,0,0.7);
+		
+		background-repeat: repeat;
+		
+		
+}
+a{
+  text-decoration: none;
+}
+
+.card-header{
+  cursor: pointer;
+}
+
+
+
+</style>
+<script>
+$(document).ready(function(){
+  $(".card-body").hide();
+  $(".card-header").click(function(){
+    $(".card-body").toggle();
+  });
+});
+
+
+</script>
+
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="container" id="container">
+		<h4 class="mt-5 bg-dark text-white text-center">PHP</h4>
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="card mb-5">
+          <div class="card-header">1) What is PHP ?</div>
+            <div class="card-body">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">2)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">3)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">4)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+
+    </div>
+	</div>
+</div>
+</body>
+<script>
+$(document).ready(function(){
+    // Add minus icon for collapse element which is open by default
+    $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+    });
+    
+    // Toggle plus minus icon on show hide of collapse element
+    $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+    }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+    });
+});
+</script>
+</html>
