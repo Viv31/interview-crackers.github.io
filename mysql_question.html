@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MySql Interview Questions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+	body{
+		background-image: url("img/bg.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: repeat;
+		height: 100vh;
+	}
+	.container-fluid{
+		background-color: rgba(0,0,0,0.7);
+		position: absolute;
+		background-repeat: repeat;
+		
+		
+}
+a{
+  text-decoration: none;
+}
+
+.card-header{
+  cursor: pointer;
+}
+
+
+
+</style>
+<script>
+$(document).ready(function(){
+  $(".card-body").hide();
+  $(".card-header").click(function(){
+    $(".card-body").toggle();
+  });
+});
+
+
+</script>
+
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="container" id = "container">
+    <a href="index.html" class="mt-1 btn btn-primary">Back to Dashboard</a>
+		<h4 class="mt-5 bg-dark text-white text-center">MySql Interview Questions  </h4>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 mx-auto">
+        <div class="card mb-5">
+          <div class="card-header">1) What is PHP ?</div>
+            <div class="card-body">
+          <b>PHP</b> is Server side Scripting Language,initially it was called <b>"Personal Home Page"</b> now a days it is called <b>"Hypertext Preprocessor"</b>.It was developed by <b>Rasmus Lerdorf</b>
+
+          </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">2) What is the Current Version of php ?</div>
+            <div class="card-body">Cureent version of php is <b>7.4.4</b></div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">3) How to define variable in Php?</div>
+            <div class="card-body">In Php Variables are defined by <b>"$"</b> </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">4) What are String Functions in PHP ?</div>
+            <div class="card-body">There are Following string functions in php:
+              <ol>
+                <li><b>strlen()</b> - Return the Length of a String</li>
+                <li><b>str_word_count()</b> - Count Words in a String</li>
+                <li><b>strrev()</b> - Reverse a String</li>
+                <li><b>strpos()</b> - Search For a Text Within a String</li>
+                <li><b>str_replace()</b> - Replace Text Within a String</li>
+                <li><b>ltrim()</b>-Removes whitespace or other predefined characters from the left side of a string</li>
+                <li><b>rtrim()</b> - Removes whitespace or other predefined characters from the right side of a string</li>
+                <li><b>strtolower()</b>-Converts a string to lowercase letters</li>
+                <li><b>strtoupper()</b>-Converts a string to Uppercase letters</li>
+                <li><b>ucfirst()</b>- Converts the first character of a string to uppercase</li>
+              </ol>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">5) What are the way to define constant in Php? </div>
+            <div class="card-body">Constants are name or identifier that can not be changed during execution of the script.
+              There are two ways of defining constants in Php:
+            <ol>
+              <li>Using <b>define()</b> function</li>
+               <li>Using <b>const()</b> function</li>
+            </ol>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">6) How to comment in php ? </div>
+            <div class="card-body">There are following ways of commenting in php
+              <ul>
+                <li>//text goes here</li>
+                <li># text goes here</li>
+                <li>/**/ text goes here</li>
+              </ul>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">7) What are the methods of submitting a form in php ?</div>
+            <div class="card-body">Methods of submitting form in php are
+              <ol>
+                <li>GET</li>
+                <li>POST</li>
+              </ol>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">8) What are diffrent types of loop in php ?</div>
+            <div class="card-body">Loops in PHP:
+              <ol>
+                <li>For loop</li>
+                <li>While Loop</li>
+                <li>do While Loop</li>
+                <li>Foreach Loop</li>
+              </ol>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">9) What is <b>Header()</b> Function in php ?</div>
+            <div class="card-body">Header function is used to redirect to a location in php <br>
+             ex: <b>header("location:index.php");</b>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">10) How many types of array in php ?</div>
+            <div class="card-body">
+              there are three types of array in php:
+              <ol>
+                <li>Index array</li>
+                <li>Associative array</li>
+                <li>Multidimensional array</li>
+              </ol>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">11) Which method is secure in GET & POST method in php & why?</div>
+            <div class="card-body">
+              POST method is secure in php because it does not our form value in url whereas GET method shows our data in URL.GET method url seems like this
+              <br>
+              <b>index.php?fieldname1=value&fieldname2=value2</b>
+            </div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">12) How to create session in php ?</div>
+            <div class="card-body">For creating session in php We use <b>session_start()</b></div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">13)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">14)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">15)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">16)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">17)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">18)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">19)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">20)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">21)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">22)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+        <div class="card mb-5">
+          <div class="card-header">23)</div>
+            <div class="card-body">Content</div>
+          
+        </div>
+
+    </div>
+	</div>
+</div>
+</body>
+<script>
+$(document).ready(function(){
+    // Add minus icon for collapse element which is open by default
+    $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+    });
+    
+    // Toggle plus minus icon on show hide of collapse element
+    $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+    }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+    });
+});
+</script>
+</html>
