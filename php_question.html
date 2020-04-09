@@ -37,25 +37,20 @@ a{
 .card-header{
   cursor: pointer;
 }
+.backtodash{
+  
+}
 
 
 
 </style>
-<script>
-$(document).ready(function(){
-  $(".card-body").hide();
-  $(".card-header").click(function(){
-    $(".card-body").toggle();
-  });
-});
 
-
-</script>
 
 </head>
 <body>
 	<div class="container-fluid">
 	<div class="container" id = "container">
+    <a href="index.html" class="mt-1 btn btn-primary backtodash">Back to Dashboard</a>
 		<h4 class="mt-5 bg-dark text-white text-center">PHP</h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
@@ -173,12 +168,20 @@ $(document).ready(function(){
           
         </div>
         <div class="card mb-5">
-          <div class="card-header">13)</div>
-            <div class="card-body">Content</div>
+          <div class="card-header">13)  Is PHP a strongly typed language?</div>
+            <div class="card-body">
+              No. PHP is a weakly typed or loosely typed language.<br>
+              This means PHP does not require to declare data types of the variable when you declare any variable like the other standard programming languages C# or Java. When you store any string value in a variable, then the data type is the string and if you store a numeric value in that same variable then the data type is an Integer.
+              <br>
+              Example:
+              <br>
+              $Myvar = "Hello World"; //String<br>
+              $Myvar = 10; //Integer
+            </div>
           
         </div>
         <div class="card mb-5">
-          <div class="card-header">14)</div>
+          <div class="card-header">14) What is the meaning of <b>"Preprocessor"</b> in Php ?</div>
             <div class="card-body">Content</div>
           
         </div>
@@ -231,20 +234,16 @@ $(document).ready(function(){
     </div>
 	</div>
 </div>
-</body>
 <script>
 $(document).ready(function(){
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
-    
-    // Toggle plus minus icon on show hide of collapse element
-    $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-    }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-    });
+  $(".card-body").hide();
+  $(".card-header").click(function(){
+    $(".card-body").toggle();
+  });
 });
+
+
 </script>
+</body>
+
 </html>
