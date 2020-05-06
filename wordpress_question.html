@@ -41,16 +41,7 @@ a{
 
 
 </style>
-<script>
-$(document).ready(function(){
-  $(".card-body").hide();
-  $(".card-header").click(function(){
-    $(".card-body").toggle();
-  });
-});
 
-
-</script>
 
 </head>
 <body>
@@ -60,35 +51,78 @@ $(document).ready(function(){
 		<h4 class="mt-5 bg-dark text-white text-center">WordPress Interview Questions  </h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
-        <div class="card mb-5">
-          <div class="card-header">1) What is WordPress ?</div>
-            <div class="card-body">
-          WordPress is a free open source content management system (CMS) written PHP language and licensed under GPL.
+
+        <div id="accordion">
+          <div class="card  mb-5">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#que1" aria-expanded="false" aria-controls="que1">
+                  1) What is WordPress ?
+                  </button>
+                </h5>
+              </div>
+
+              <div id="que1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  WordPress is a free open source content management system (CMS) written PHP language and licensed under GPL.
 It allows users to create dynamic websites from personal blogs to e-commerce. Wordpress's current stable version as on Sept 2019 of WordPress is 5.2.3. You can download it free without any cost from https://wordpress.org/latest.zip.
 
-          </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">2) What year was WordPress released?</div>
-            <div class="card-body">First version of wordress is released in Year 2003</div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">3) What are minimum requirements to run WordPress?</div>
-            <div class="card-body">
-        <ol>
+                </div>
+              </div>
+            </div>
+
+       
+        <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que2" aria-expanded="false" aria-controls="que2">
+         2) What year was WordPress released?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       First version of wordress is released in Year 2003.
+       </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que3" aria-expanded="false" aria-controls="que2">
+        3) What are minimum requirements to run WordPress?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       <ol>
           <li>PHP 7 or greater</li>
           <li>MySQL 5.6 or greater OR MariaDB 10.0 or greater</li>
           <li>The mod_rewrite Apache module</li>
           <li>HTTPS support(Recommended)</li>
         </ol>
-             </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">4) List some features of WordPress.</div>
-            <div class="card-body">WordPress powers more than 28% of the web and this figure is not limited it rises every day.Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que4" aria-expanded="false" aria-controls="que2">
+       4) List some features of WordPress.
+        </button>
+      </h5>
+    </div>
+
+    <div id="que4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      WordPress powers more than 28% of the web and this figure is not limited it rises every day.Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
 Here are some of the features of WordPress
               <ol>
                 <li>It’s Simplicity</li>
@@ -100,71 +134,153 @@ Here are some of the features of WordPress
                       <li>Custom Content Types</li>
                        <li>Easy Installation and Upgrades</li>
               </ol>
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">5) What is a plugin in WordPress? List plugin that comes with WordPress.</div>
-            <div class="card-body">WordPress Plugins are a piece of code that contains one or more functions written to extend and add to the functionality of an existing WordPress website.
+             
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que5" aria-expanded="false" aria-controls="que2">
+       5) What is a plugin in WordPress? List plugin that comes with WordPress?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que5" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+     WordPress Plugins are a piece of code that contains one or more functions written to extend and add to the functionality of an existing WordPress website.
 The core of WordPress is designed to be lean and lightweight, to maximize flexibility and minimize code bloat. Plugins then offer custom functions and features so that each user can tailor their site to their specific needs.
 Below is the list of plugins that comes with WordPress installation.
             <ol>
               <li>Akismet</li>
                <li>Hello Dolly</li>
             </ol>
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">6) What are the types of hooks in WP and what are their functions? </div>
-            <div class="card-body">
-              There are two types hooks are available in WordPress, action hooks and filter hooks
+             
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que6" aria-expanded="false" aria-controls="que2">
+       6) What are the types of hooks in WP and what are their functions? 
+        </button>
+      </h5>
+    </div>
+
+    <div id="que6" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    There are two types hooks are available in WordPress, action hooks and filter hooks
               They allow the user to, with short snippets of code, modify areas in a theme or plugin without modifying the original file.
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">7)What are the differences between Posts and Pages?</div>
-            <div class="card-body">Posts and Pages are the two content types in WP.
+             
+      </div>
+    </div>
+  </div>
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que7" aria-expanded="false" aria-controls="que2">
+       7) What are the differences between Posts and Pages?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que7" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+   Posts and Pages are the two content types in WP.
 Posts are timed and listed in chronological order with the latest posts at the top. Posts are meant to be shared and commented on.
 
 Pages are static are static content, so an about us, contact us page etc. They are permanent and timeless entries.
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">8) 10) What is an action hook?</div>
-            <div class="card-body">An Action hook in WordPress is a hook that is triggered at a specific time when WordPress is running and lets you take an action. This can include things like creating a widget when WordPress is initializing or sending a Tweet when someone publishes a post.
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">9)What is a filter hook?</div>
-            <div class="card-body">A Filter hook in WordPress allows you get and modify WordPress data before it is sent to the database or the browser. Some examples of filters would include customizing how excerpts are displayed or adding some custom code to the end of a blog post or headings.
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">10)How do you enable debug mode in WP?</div>
-            <div class="card-body">
-              You can enable debug mode in WP by editing wp-config.php file and changing WP_DEBUG constant value to true
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">11)What is a WordPress taxonomy?</div>
-            <div class="card-body">
-             In WordPress, a “taxonomy” is a grouping mechanism for some posts (or links or custom post types). There are four default taxonomies in WordPress they are
+             
+      </div>
+    </div>
+  </div>
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que8" aria-expanded="false" aria-controls="que2">
+       8)  What is an action hook?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que8" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+     An Action hook in WordPress is a hook that is triggered at a specific time when WordPress is running and lets you take an action. This can include things like creating a widget when WordPress is initializing or sending a Tweet when someone publishes a post.
+             
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que9" aria-expanded="false" aria-controls="que2">
+       9)  What is a filter hook?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que9" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    A Filter hook in WordPress allows you get and modify WordPress data before it is sent to the database or the browser. Some examples of filters would include customizing how excerpts are displayed or adding some custom code to the end of a blog post or headings.
+             
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que10" aria-expanded="false" aria-controls="que2">
+       10) How do you enable debug mode in WP?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que10" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    You can enable debug mode in WP by editing wp-config.php file and changing WP_DEBUG constant value to true
+             
+      </div>
+    </div>
+  </div>
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que11" aria-expanded="false" aria-controls="que2">
+       11) What is a WordPress taxonomy?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que11" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    In WordPress, a “taxonomy” is a grouping mechanism for some posts (or links or custom post types). There are four default taxonomies in WordPress they are
              <ul>
                <li>Category</li>
                <li>Tag</li>
                <li>Link Category</li>
                <li>Post Formats</li>
              </ul>
-            </div>
-          
-        </div>
-        
+             
+      </div>
+    </div>
+  </div>
+
+
+  </div>  
     </div><!--End of Column-->
 	</div>
 </div>

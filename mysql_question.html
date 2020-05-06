@@ -41,17 +41,6 @@ a{
 
 
 </style>
-<script>
-$(document).ready(function(){
-  $(".card-body").hide();
-  $(".card-header").click(function(){
-    $(".card-body").toggle();
-  });
-});
-
-
-</script>
-
 </head>
 <body>
 	<div class="container-fluid">
@@ -60,22 +49,41 @@ $(document).ready(function(){
 		<h4 class="mt-5 bg-dark text-white text-center">MySql Interview Questions  </h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
-        <div class="card mb-5">
-          <div class="card-header">1) What is MySQL?</div>
-            <div class="card-body">
-          Answer: MySQL is an open-source DBMS which is developed and distributed by Oracle Corporation.
+
+           <div id="accordion">
+          <div class="card  mb-5">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#que1" aria-expanded="false" aria-controls="que1">
+                   1) What is MySQL?
+                  </button>
+                </h5>
+              </div>
+
+              <div id="que1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Answer: MySQL is an open-source DBMS which is developed and distributed by Oracle Corporation.
 
 It is supported by most of the popular operating systems, such as Windows, Linux, etc. It can be used to develop different types of applications but it is mainly used for developing web applications.
 
 MySQL uses GPL (GNU General Public License) so that anyone can download and install it for developing those applications which will be published or distributed freely. But if a user wants to develop any commercial application using MySQL then he/she will need to buy the commercial version of MySQL.
+                </div>
+              </div>
+            </div>
 
-          </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">2)What are the features of MySQL?</div>
-            <div class="card-body">
-              Some important features of MySQL are mentioned below:
+       
+        <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que2" aria-expanded="false" aria-controls="que2">
+         2)What are the features of MySQL?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+         Some important features of MySQL are mentioned below:
               <ul>
                 <li>It is reliable and easy to use too.</li>
                 <li>It is a suitable database software for both large and small applications.</li>
@@ -85,17 +93,41 @@ MySQL uses GPL (GNU General Public License) so that anyone can download and inst
                 <li>The open-source license of MySQL is customizable. Hence, a developer can modify it according to the requirements of the application.</li>
 
               </ul>
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">3) What is the default port number of MySQL?</div>
-            <div class="card-body">The default port number of MySQL is 3306.</div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">4)What are the differences between a primary key and a foreign key?</div>
-            <div class="card-body">Answer: The database table uses a primary key to identify each row uniquely. It is necessary to declare the primary key on those tables that require to create a relationship among them. One or more fields of a table can be declared as the primary key.
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que3" aria-expanded="false" aria-controls="que3">
+         3) What is the default port number of MySQL?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+         The default port number of MySQL is 3306.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que4" aria-expanded="false" aria-controls="que4">
+         4) What are the differences between a primary key and a foreign key?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Answer: The database table uses a primary key to identify each row uniquely. It is necessary to declare the primary key on those tables that require to create a relationship among them. One or more fields of a table can be declared as the primary key.
 
 When the primary key of any table is used in another table as the primary key or another field for making a database relation, then it is called a foreign key.
 
@@ -110,13 +142,24 @@ When a record is inserted in a table that contains the primary key then it is no
 
 
 
-              
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">5) What are the differences between CHAR and VARCHAR data types? </div>
-            <div class="card-body">Both CHAR and VARCHAR data types are used to store string data in the field of the table.
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que5" aria-expanded="false" aria-controls="que5">
+        5) What are the differences between CHAR and VARCHAR data types? 
+        </button>
+      </h5>
+    </div>
+
+    <div id="que5" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Both CHAR and VARCHAR data types are used to store string data in the field of the table.
 
 The differences between these data types are mentioned below:
 <ol>
@@ -125,30 +168,16 @@ The differences between these data types are mentioned below:
   <li>CHAR is used to store small data whereas VARCHAR is used to store large data.
 CHAR works faster and VARCHAR works slower.</li>
 </ol>
+         
+      </div>
+    </div>
+  </div>
 
+  </div><!--End of Accordian-->
 
-
-            </div>
-          
-        </div>
-        
-    </div><!--End of Column-->
+ </div><!--End of Column-->
 	</div>
 </div>
 </body>
-<script>
-$(document).ready(function(){
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
-    
-    // Toggle plus minus icon on show hide of collapse element
-    $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-    }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-    });
-});
-</script>
+
 </html>

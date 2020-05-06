@@ -41,16 +41,7 @@ a{
 
 
 </style>
-<script>
-$(document).ready(function(){
-  $(".card-body").hide();
-  $(".card-header").click(function(){
-    $(".card-body").toggle();
-  });
-});
 
-
-</script>
 
 </head>
 <body>
@@ -60,85 +51,166 @@ $(document).ready(function(){
 		<h4 class="mt-5 bg-dark text-white text-center">JS Interview Questions</h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
-        <div class="card mb-5">
-          <div class="card-header">1) What is JS ?</div>
-            <div class="card-body">
-          <b>JavaScript</b> is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScrip
-          </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">2) What are JavaScript Data Types?</div>
-            <div class="card-body">Following are the JavaScript Data types:
+        <div id="accordion">
+          <div class="card  mb-5">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#que1" aria-expanded="false" aria-controls="que1">
+                  1) What is JS ?
+                  </button>
+                </h5>
+              </div>
+
+              <div id="que1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                   <b>JavaScript</b> is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScrip
+
+                </div>
+              </div>
+            </div>
+
+       
+        <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que2" aria-expanded="false" aria-controls="que2">
+         2) What are JavaScript Data Types?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       
+ Following are the JavaScript Data types:
               <ol>
                 <li>Number</li>
                 <li>String</li>
                 <li>Object</li>
                 <li>Boolean</li>
               </ol>
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">3)  What is the use of isNaN function?</div>
-            <div class="card-body">isNan function returns true if the argument is not a number otherwise it is false. </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">4)  Which company developed JavaScript?</div>
-            <div class="card-body">There are Following string functions in php:
-              Netscape is the software company who developed JavaScript.
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">5) What is a prompt box?</div>
-            <div class="card-body">A prompt box is a box which allows the user to enter input by providing a text box. Label and box will be provided to enter the text or number.
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">6) What is 'this' keyword in JavaScript? </div>
-            <div class="card-body">'This' keyword refers to the object from where it was called.
-              </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">7) Which symbol is used for comments in Javascript?</div>
-            <div class="card-body">Methods of Commenting  in JS are
+       
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que3" aria-expanded="false" aria-controls="que2">
+        3) What is the use of isNaN function?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       
+       isNan function returns true if the argument is not a number otherwise it is false.
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que4" aria-expanded="false" aria-controls="que2">
+       4) Which company developed JavaScript?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       Netscape is the software company who developed JavaScript.
+             
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que5" aria-expanded="false" aria-controls="que2">
+       5) What is a prompt box?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que5" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    A prompt box is a box which allows the user to enter input by providing a text box. Label and box will be provided to enter the text or number.
+             
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que6" aria-expanded="false" aria-controls="que2">
+       6) What is 'this' keyword in JavaScript? 
+        </button>
+      </h5>
+    </div>
+
+    <div id="que6" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    'This' keyword refers to the object from where it was called.
+             
+      </div>
+    </div>
+  </div>
+
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que7" aria-expanded="false" aria-controls="que2">
+       7) Which symbol is used for comments in Javascript?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que7" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+    Methods of Commenting  in JS are
               <ol>
                 <li>// for Single line comments and</li>
                 <li>/* Multi Line Comment */</li>
               </ol>
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">8) What is === operator ?</div>
-            <div class="card-body">
-              === is called as strict equality operator which returns true when the two operands are having the same value without any type conversion.
-            </div>
-          
-        </div>
-       
+             
+      </div>
+    </div>
+  </div>
 
-    </div><!--End of column-->
+  <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que8" aria-expanded="false" aria-controls="que2">
+       8) What is === operator ?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que8" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+     === is called as strict equality operator which returns true when the two operands are having the same value without any type conversion.
+             
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</div><!--End of column-->
 	</div>
 </div>
 </body>
-<script>
-$(document).ready(function(){
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
-    
-    // Toggle plus minus icon on show hide of collapse element
-    $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-    }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-    });
-});
-</script>
+
 </html>

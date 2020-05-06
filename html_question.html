@@ -41,16 +41,7 @@ a{
 
 
 </style>
-<script>
-$(document).ready(function(){
-  $(".card-body").hide();
-  $(".card-header").click(function(){
-    $(".card-body").toggle();
-  });
-});
 
-
-</script>
 
 </head>
 <body>
@@ -60,27 +51,75 @@ $(document).ready(function(){
 		<h4 class="mt-5 bg-dark text-white text-center">HTML Interview Questions</h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
-        <div class="card mb-5">
-          <div class="card-header">1) What is HTML ?</div>
-            <div class="card-body">
-          <b>HTML</b> is Markup  Language,it's full form is <b>"Hypertext Markup Language"</b>.It is used for creating basic structure of a webpage.
 
-          </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">2) Why HTML is called "Markup Language" ?</div>
-            <div class="card-body">HTML is called "Markup Language" because the code written in Angular Bracket"<b>&lt;&gt;</b>"</div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">3)What is extension of HTML page?</div>
-            <div class="card-body"> The extension of HTML page is<b>".html,.htm"</b> </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">4) Explain headings in HTML ?</div>
-            <div class="card-body">There are Following six types of heading in HTML:
+        <div id="accordion">
+          <div class="card  mb-5">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#que1" aria-expanded="false" aria-controls="que1">
+                  1)What is HTML ?
+                  </button>
+                </h5>
+              </div>
+
+              <div id="que1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <b>HTML</b> is Markup  Language,it's full form is <b>"Hypertext Markup Language"</b>.It is used for creating basic structure of a webpage.
+
+                </div>
+              </div>
+            </div>
+
+       
+        <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que2" aria-expanded="false" aria-controls="que2">
+         2) Why HTML is called "Markup Language" ?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        HTML is called "Markup Language" because the code written in Angular Bracket"<b>&lt;&gt;</b>"
+       
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que3" aria-expanded="false" aria-controls="que2">
+         3) What is extension of HTML page?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       
+       The extension of HTML page is<b>".html,.htm"</b>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que4" aria-expanded="false" aria-controls="que2">
+       4)Explain headings in HTML ?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       
+              There are Following six types of heading in HTML:
               <ol>
                <li>h1</li>
                <li>h2</li>
@@ -89,28 +128,22 @@ $(document).ready(function(){
                <li>h5</li>
                <li>h6</li>
               </ol>
-            </div>
-          
-        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+        
+        
+       
+       
         
     </div>
 	</div>
 </div>
 </div>
 </body>
-<script>
-$(document).ready(function(){
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
-    
-    // Toggle plus minus icon on show hide of collapse element
-    $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-    }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-    });
-});
-</script>
+
 </html>

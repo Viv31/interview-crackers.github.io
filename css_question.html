@@ -41,16 +41,7 @@ a{
 
 
 </style>
-<script>
-$(document).ready(function(){
-  $(".card-body").hide();
-  $(".card-header").click(function(){
-    $(".card-body").toggle();
-  });
-});
 
-
-</script>
 
 </head>
 <body>
@@ -60,17 +51,37 @@ $(document).ready(function(){
 		<h4 class="mt-5 bg-dark text-white text-center">CSS Interview Questions</h4>
     <div class="row">
       <div class="col-md-8 col-sm-12 mx-auto">
-        <div class="card mb-5">
-          <div class="card-header">1) What is CSS ?</div>
-            <div class="card-body">
-          <b>CSS</b> is called "<b>Cascading Stylesheet</b>",which is used for look and feel of a website.
+        <div id="accordion">
+          <div class="card  mb-5">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#que1" aria-expanded="false" aria-controls="que1">
+                  1) What is CSS ?
+                  </button>
+                </h5>
+              </div>
 
-          </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">2) What are the types of CSS ?</div>
-            <div class="card-body">There are following three types of CSS:
+              <div id="que1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                   <b>CSS</b> is called "<b>Cascading Stylesheet</b>",which is used for look and feel of a website.
+
+                </div>
+              </div>
+            </div>
+
+       
+        <div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que2" aria-expanded="false" aria-controls="que2">
+         2) What are the types of CSS ?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       There are following three types of CSS:
               <ol>
                 <li>Inline</li>
                 <li>Internal</li>
@@ -91,13 +102,25 @@ $(document).ready(function(){
                 Example of External Css:<br>
                 it is writeen in seperate file having extension .css and our properties are expalin in this file
 
+       
+      </div>
+    </div>
+  </div>
 
-            </div>
-          
-        </div>
-        <div class="card mb-5">
-          <div class="card-header">3) How to define class and id in CSS?</div>
-            <div class="card-body">In CSS classes are defined by . and id is defined by # <br>
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que3" aria-expanded="false" aria-controls="que2">
+        3) How to define class and id in CSS?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       
+      In CSS classes are defined by . and id is defined by # <br>
             &lt;style&gt; 
             .classname{
             //properties
@@ -109,28 +132,46 @@ $(document).ready(function(){
 
             &lt;/style&gt; 
 
-            </div>
-          
-        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card  mb-5">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#que4" aria-expanded="false" aria-controls="que2">
+       4) Types of <b>"Selectors in CSS"</b> ?
+        </button>
+      </h5>
+    </div>
+
+    <div id="que4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       
+              There are Following  types of Selectors in CSS:
+              <ol>
+               <li>Class Selector</li>
+               <li>Id Selector</li>
+               <li>Element Selector</li>
+               <li>Universal Selectors</li>
+               <li>Group Selectors</li>
+               
+              </ol>
+       
+      </div>
+    </div>
+  </div>
+
+
+  </div>
         
+
+
 
     </div><!--End of Column-->
 	</div>
 </div>
 </body>
-<script>
-$(document).ready(function(){
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
-    
-    // Toggle plus minus icon on show hide of collapse element
-    $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-    }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-    });
-});
-</script>
+
 </html>
